@@ -38,7 +38,7 @@ var initSR = function () {
   });
 };
 
-var swapImages = function (n) {
+var swapImage = function (n) {
   imagesCounter = imagesCounter + n;
   if (imagesCounter < 0) {
     imagesCounter = imagesLength - 1;
