@@ -11,9 +11,9 @@ var initSR = function () {
     console.log("pages each");
     $.each(pages, function (i, item) {
       console.log("* pages each", pages[i]);
-      images.push(pages[i] + "/1.jpg");
-      images.push(pages[i] + "/2.jpg");
-      images.push(pages[i] + "/3.jpg");
+      images.push(pages[i] + "01.jpg");
+      images.push(pages[i] + "02.jpg");
+      images.push(pages[i] + "03.jpg");
     });
   }
 
