@@ -16,6 +16,15 @@ var initSR = function () {
       images.push(pages[i] + "01.jpg");
       images.push(pages[i] + "02.jpg");
       images.push(pages[i] + "03.jpg");
+      images.push(pages[i] + "04.jpg");
+      images.push(pages[i] + "05.jpg");
+      images.push(pages[i] + "06.jpg");
+      images.push(pages[i] + "07.jpg");
+      images.push(pages[i] + "08.jpg");
+      images.push(pages[i] + "09.jpg");
+      images.push(pages[i] + "10.jpg");
+      images.push(pages[i] + "11.jpg");
+      images.push(pages[i] + "12.jpg");
     });
   }
 
