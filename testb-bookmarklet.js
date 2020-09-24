@@ -4,12 +4,16 @@
 var initSR = function () {
   alert("init!");
   pages = [];
+  images = [];
 
   if (localStorage.getItem("TB_Pages")) {
     pages = $.parseJSON(localStorage.getItem("TB_Pages"));
     console.log("pages each");
     $.each(pages, function (i, item) {
       console.log("* pages each", pages[i]);
+      images.push(pages[i] + "/1.jpg");
+      images.push(pages[i] + "/2.jpg");
+      images.push(pages[i] + "/3.jpg");
     });
   }
 
@@ -30,6 +34,13 @@ var addOverlay = function () {
   var overlayHTML =
     "<div id='TB_Overlay' style='z-index:999999999999; position: fixed; top: 0; bottom: 0; left: 0; right: 0; background: black;'></div>";
   $("body").append(overlayHTML);
+  $.each(images, function (i, item) {
+    $("#TB_Overlay").append(
+      "<img src='" +
+        images[i] +
+        "' style='width: 100vw; height: 100vh; object-fit: contain;' />"
+    );
+  });
 };
 
 /* LOAD
