@@ -17,7 +17,12 @@ var initSR = function () {
   pages.push(pageURL);
   localStorage.setItem("TB_Pages", JSON.stringify(pages));
 
-  // JSON.stringify(overlays)
+  $(document).on("keyup", function (event) {
+    alert("KEY:" + event.which);
+    if (event.which === 191) {
+      alert("Go Time");
+    }
+  });
 };
 
 /* LOAD
