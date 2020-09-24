@@ -12,7 +12,7 @@ var initSR = function () {
 //
 TestBjQuery = document.createElement("script");
 TestBjQuery.setAttribute("id", "testb-jquery");
-TestBjQuery.setAttribute("src", "https://jeffschram.github.io/jquery.js");
+TestBjQuery.setAttribute("src", window.TestBBookmarkletDomain + "jquery.js");
 TestBjQuery.onload = function () {
   initSR();
 };

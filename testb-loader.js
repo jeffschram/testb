@@ -2,7 +2,7 @@
   (function () {
     var TestBBookmarklet, TestBjQuery;
     window.TestBBookmarkletVersion = "";
-    window.TestBBookmarkletDomain = "https://jeffschram.github.io";
+    window.TestBBookmarkletDomain = "https://jeffschram.github.io/testb";
     // uncomment for local dev
     // window.TestBBookmarkletDomain = "http://0.0.0.0:4567";
 
