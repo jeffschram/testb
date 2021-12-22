@@ -10,9 +10,9 @@ var initSR = function () {
 
   if (localStorage.getItem("TB_Pages")) {
     pages = $.parseJSON(localStorage.getItem("TB_Pages"));
-    console.log("pages each", "length:", pages.length);
+    alert("pages each", "length:", pages.length);
     $.each(pages, function (i, item) {
-      console.log("* pages each", pages[i]);
+      alert("* pages each", pages[i]);
       images.push(pages[i] + "01.jpg");
       images.push(pages[i] + "02.jpg");
       images.push(pages[i] + "03.jpg");
