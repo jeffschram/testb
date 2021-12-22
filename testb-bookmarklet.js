@@ -2,7 +2,7 @@
 ----------------------------------------------------------------- */
 
 var initSR = function () {
-  alert("init!");
+  alert("init! ∆∆");
   pages = [];
   images = [];
   imagesCounter = 0;
@@ -10,7 +10,7 @@ var initSR = function () {
 
   if (localStorage.getItem("TB_Pages")) {
     pages = $.parseJSON(localStorage.getItem("TB_Pages"));
-    console.log("pages each");
+    console.log("pages each", "length:", pages.length);
     $.each(pages, function (i, item) {
       console.log("* pages each", pages[i]);
       images.push(pages[i] + "01.jpg");
