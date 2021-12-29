@@ -2,17 +2,17 @@
 ----------------------------------------------------------------- */
 
 var initSR = function () {
-  alert("init! ∆∆");
   pages = [];
   images = [];
   imagesCounter = 0;
   imagesLength = 0;
+  alert("init! ∆∆" + pages.length);
 
   if (localStorage.getItem("TB_Pages")) {
     pages = $.parseJSON(localStorage.getItem("TB_Pages"));
-    alert("pages each", "length:", pages.length);
+    //alert("pages each", "length:", pages.length);
     $.each(pages, function (i, item) {
-      alert("* pages each", pages[i]);
+      //alert("* pages each", pages[i]);
       images.push(pages[i] + "01.jpg");
       images.push(pages[i] + "02.jpg");
       images.push(pages[i] + "03.jpg");
