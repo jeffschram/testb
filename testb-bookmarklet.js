@@ -6,7 +6,7 @@ var initSR = function () {
   images = [];
   imagesCounter = 0;
   imagesLength = 0;
-  alert("init! ∆∆" + pages.length);
+  alert("init! ∆∆2" + pages.length);
 
   if (localStorage.getItem("TB_Pages")) {
     pages = $.parseJSON(localStorage.getItem("TB_Pages"));
