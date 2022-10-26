@@ -33,6 +33,7 @@ var initSR = function () {
   localStorage.setItem("TB_Pages", JSON.stringify(pages));
 
   $(document).on("keyup", function (event) {
+    console.log('keyup', event.which);
     if (event.which === 191) {
       addOverlay();
     }
