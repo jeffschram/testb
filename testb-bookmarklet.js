@@ -6,7 +6,7 @@ var initSR = function () {
   images = [];
   imagesCounter = 0;
   imagesLength = 0;
-  alert("init! ∆∆4" + pages.length);
+  alert("init! ∆∆5" + pages.length);
 
   if (localStorage.getItem("TB_Pages")) {
     pages = $.parseJSON(localStorage.getItem("TB_Pages"));
@@ -33,7 +33,6 @@ var initSR = function () {
   localStorage.setItem("TB_Pages", JSON.stringify(pages));
 
   $(document).on("keyup", function (event) {
-    alert('keyup '+ event.which);
     if (event.which === 191) {
       addOverlay();
     }
