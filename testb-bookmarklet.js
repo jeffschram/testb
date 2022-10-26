@@ -45,6 +45,10 @@ var initSR = function () {
       // forward
       swapImage(1);
     }
+    if (event.which === 67) {
+      alert('auto');
+      setInterval(function(){swapImage(1);}, 1000);
+    }
   });
 };
 
